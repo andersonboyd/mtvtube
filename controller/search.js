@@ -7,7 +7,7 @@ module.exports = {
         console.log(req.params.query);
         let query=req.params.query;
         axios
-            .get("https://www.googleapis.com/youtube/v3/search/?part=snippet&type=video&q="+query+"&maxResults=10&key="+key)
+            .get("https://www.googleapis.com/youtube/v3/search/?part=snippet&type=video&q="+query+"&maxResults=12&key="+key)
             .then(function(response){
                 // ~*~*~ sends video info as array of objects ~*~*~
                 function Vids(id, vidId, title, thumbs){
